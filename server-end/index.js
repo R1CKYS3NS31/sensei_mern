@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 
 // from files
-const db = require('./data/db/DB');
+const db = require('./data/db');
 
 const app = express()
 const apiPort = 8001
