@@ -2,13 +2,20 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors');
 
+// from files
+const db = require('./data/db/DB');
+
 const app = express()
-const apiPort = 8000
+const apiPort = 8001
 
 // middlewares
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(cors())
+
+
+//  db
+db.on('error',console.error.bind(console,'MongoDB connection error: '))
 
 // routes
 app.get('/',(req,res)=>{
