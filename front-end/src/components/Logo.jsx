@@ -5,11 +5,13 @@ const Wrapper = styled.a.attrs({
     className: 'navbar-brand'
 })``
 
+import logo from './logo.svg'
+
 class Logo extends Component{
     render(){
         return(
             <Wrapper href = 'https://sambarros.com'>
-                <img alt="sambarros.com" width={50} height={50}/>
+                <img src={logo} alt="sambarros.com" width={50} height={50}/>
             </Wrapper>
         )
     }
