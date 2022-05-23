@@ -11,6 +11,9 @@ createMovie = (req, res) => {
   }
 
   const movie = new Movie(body);
+  
+//   test
+console.log(movie.name);
 
   if (!movie) {
     return res.status(400).json({
