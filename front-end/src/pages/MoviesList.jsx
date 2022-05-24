@@ -60,7 +60,7 @@ export default class MoviesList extends Component {
 
     let showTable = true
     if(!movies.length){
-        showTable = false
+        showTable = true
     }
 
     return (
