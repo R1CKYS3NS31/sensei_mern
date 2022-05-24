@@ -7,7 +7,7 @@ const db = require('./data/db');
 const movieRouter = require('./routes/movie_router');
 
 const app = express()
-const apiPort = 8001
+const apiPort = 8000
 
 // middlewares
 app.use(bodyParser.urlencoded({extended:true}))
